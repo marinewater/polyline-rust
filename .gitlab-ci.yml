@@ -1,0 +1,8 @@
+stages:
+  - test
+
+test:
+  image: rust:1.43
+  stage: test
+  script:
+    - cargo test --no-fail-fast
