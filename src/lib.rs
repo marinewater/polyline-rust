@@ -1,4 +1,4 @@
-//! # polyline_rust
+//! # polyline-rust
 //! Crate to encode/decode polylines in "Encoded Polyline Algorithm Format"
 //!
 //! Usage example:
