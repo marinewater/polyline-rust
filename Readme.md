@@ -1,6 +1,6 @@
 # polyline-rust
 
-Go package to encode/decode polylines in "Encoded Polyline Algorithm Format"
+Crate to encode/decode polylines in "Encoded Polyline Algorithm Format".
 
 Usage example:
  ```

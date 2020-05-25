@@ -1,8 +1,21 @@
 stages:
   - test
+  - publish
 
 test:
   image: rust:1.43
   stage: test
   script:
     - cargo test --no-fail-fast
+
+publish:
+  image: rust:1.43
+  stage: publish
+  dependencies:
+    - build
+    only:
+      - tags
+  before_script:
+    - cargo login $CARGO_TOKEN
+  script:
+    - cargo publish

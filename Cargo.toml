@@ -1,5 +1,7 @@
 [package]
 name = "polyline_rust"
+description = "Crate to encode/decode polylines in \"Encoded Polyline Algorithm Format\"."
+license = "MIT"
 version = "0.1.0"
 authors = ["marinewater <martin@bukovics.de>"]
 edition = "2018"
