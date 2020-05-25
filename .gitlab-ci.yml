@@ -16,6 +16,8 @@ publish:
     CARGO_HOME: $CI_BUILDS_DIR/cargo
   dependencies:
     - test
+  only:
+    - tags
   before_script:
     - cargo login $CARGO_TOKEN
   script:
