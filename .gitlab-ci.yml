@@ -12,9 +12,9 @@ publish:
   image: rust:1.43
   stage: publish
   dependencies:
-    - build
-    only:
-      - tags
+    - test
+  only:
+    - tags
   before_script:
     - cargo login $CARGO_TOKEN
   script:
