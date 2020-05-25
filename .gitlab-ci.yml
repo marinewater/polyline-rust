@@ -13,7 +13,7 @@ publish:
   stage: publish
   variables:
     GIT_CLONE_PATH: $CI_BUILDS_DIR/polyline-rust
-    CARGO_HOME: $CI_PROJECT_DIR/cargo
+    CARGO_HOME: $CI_BUILDS_DIR/cargo
   dependencies:
     - test
   before_script:
