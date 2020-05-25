@@ -11,10 +11,10 @@ test:
 publish:
   image: rust:1.43
   stage: publish
+  variables:
+    CARGO_HOME: $CI_PROJECT_DIR/cargo
   dependencies:
     - test
-  only:
-    - tags
   before_script:
     - cargo login $CARGO_TOKEN
   script:
