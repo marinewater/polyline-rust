@@ -12,6 +12,7 @@ publish:
   image: rust:1.43
   stage: publish
   variables:
+    GIT_CLONE_PATH: $CI_BUILDS_DIR/polyline-rust
     CARGO_HOME: $CI_PROJECT_DIR/cargo
   dependencies:
     - test
